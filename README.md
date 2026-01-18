@@ -17,7 +17,9 @@ Page d'accueil professionnelle pour Charlotte Wailly, avocate et médiatrice à 
 🛠️ Technologies utilisées
 -------------------------
 
-- **HTML5 & CSS3**
+- **HTML5, SCSS & JavaScript**
+- [Parcel](https://parceljs.org) : bundler et serveur de développement
+- [Sass](https://sass-lang.com) : préprocesseur CSS
 - [PicoCSS](https://picocss.com) : framework CSS minimaliste
 - [Leaflet.js](https://leafletjs.com) : carte interactive
 - [Font Awesome](https://fontawesome.com) : icônes SVG
@@ -26,32 +28,42 @@ Page d'accueil professionnelle pour Charlotte Wailly, avocate et médiatrice à 
 📦 Installation
 ---------------
 
+Prérequis : Node.js 18 ou supérieur et npm.
+
 1. Clonez le dépôt ou téléchargez les fichiers.
-2. Ouvrez un terminal et exécutez le script `entrypoint.sh` :
+2. Installez les dépendances :
 ```bash
-./entrypoint.sh
+npm install
 ```
-3. Suivez les instructions affichées pour lancer le projet.
-4. Ouvrez `index.html` dans votre navigateur.
-
-📝 Commandes du script
-----------------------
-
-Le script `entrypoint.sh` propose plusieurs commandes pour faciliter la gestion du projet :
-
-- `open` : Ouvre la page d'accueil (`index.html`) dans le navigateur par défaut.
-- `build` : Génère le dossier `build` contenant tous les fichiers nécessaires pour le déploiement (css, js, images, favicon, CV, index.html).
-- `deploy` : Déploie le contenu du dossier `build` sur la branche `gh-pages` du dépôt GitHub (nécessite git).
-- `cname` : Génère le fichier `CNAME` avec le nom de domaine configuré (par défaut : charlottewailly.fr).
-
-Pour exécuter une commande spécifique :
+3. Lancez le serveur de développement :
 ```bash
-./entrypoint.sh <commande>
+npm run open
 ```
-Exemple pour générer le build :
+Le site est servi sur `http://localhost:1234` et s'ouvre dans votre navigateur.
+
+📝 Commandes
+------------
+
+- `npm run open` : démarre le serveur Parcel avec rechargement à chaud et ouvre le navigateur.
+- `npm run watch` : démarre le serveur Parcel sans ouvrir le navigateur.
+- `npm run build` : génère le dossier `dist/` optimisé (HTML, CSS, JavaScript, images, CV, favicon) prêt pour le déploiement.
+- `npm run deploy` : construit le site et le publie sur la branche `gh-pages` avec le fichier `CNAME`.
+- `npm run clean` : supprime `dist/` et le cache Parcel.
+
+🚀 Déploiement
+--------------
+
+`npm run deploy` construit le site puis publie `dist/` sur la branche `gh-pages`. Le fichier `CNAME` est ajouté automatiquement par `gh-pages` pour le domaine `charlottewailly.fr`.
+
 ```bash
-./entrypoint.sh build
+npm run deploy
 ```
+
+Le dossier `dist/` est généré : il n'a pas besoin d'être versionné pour que le déploiement fonctionne.
+
+Le déploiement est aussi automatisé : chaque push sur `main` déclenche le workflow GitHub Actions `.github/workflows/deploy.yml`, qui construit le site et publie `dist/` sur la branche `gh-pages` avec le fichier `CNAME`.
+
+Dans les paramètres GitHub du dépôt, la source GitHub Pages doit être configurée sur la branche `gh-pages` (dossier `/`).
 
 👨‍💻 Auteur
 ---------

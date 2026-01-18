@@ -1,0 +1,27 @@
+{
+  "name": "charlotte-wailly",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Page d'accueil professionnelle pour Charlotte Wailly, avocate et médiatrice à Lorient",
+  "author": "Matthias Morin <mat@tangoman.io>",
+  "license": "MIT",
+  "source": "src/index.html",
+  "scripts": {
+    "open": "parcel --open",
+    "watch": "parcel",
+    "build": "rm -rf dist && parcel build --public-url ./ && mkdir -p dist/images && cp src/images/charlotte_wailly_profile.jpg dist/images/",
+    "deploy": "npm run build && gh-pages --dist dist --cname charlottewailly.fr",
+    "clean": "rm -rf dist .parcel-cache"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.16.4",
+    "@parcel/transformer-sass": "^2.16.4",
+    "@parcel/transformer-webmanifest": "^2.16.4",
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.16.4",
+    "sass": "^1.108.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

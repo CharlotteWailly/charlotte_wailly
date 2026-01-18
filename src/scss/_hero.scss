@@ -1,0 +1,35 @@
+/* hero */
+.hero-container {
+  position: relative;
+
+  > ul {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    > li {
+      display: inline;
+      padding: .5rem;
+
+      > a {
+        text-decoration: none;
+        color: var(--pico-primary-inverse);
+      }
+    }
+  }
+}
+
+.picture-container {
+  margin: auto;
+  width: 100%;
+  margin: 0 var(--pico-spacing);
+}
+
+.picture {
+  border-radius: var(--pico-border-radius);
+}
+
+.title, .caption {
+  margin: .5em 0;
+  text-align: center;
+}

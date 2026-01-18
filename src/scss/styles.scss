@@ -4,6 +4,10 @@
  */
 
 /* Base styles */
-@import 'base';
-@import 'components';
-@import 'layout';
+@use 'base';
+@use 'logo';
+@use 'navbar';
+@use 'theme-toggle';
+@use 'hero';
+@use 'map';
+@use 'layout';

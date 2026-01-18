@@ -1,0 +1,22 @@
+/* logo */
+.logo > span {
+  &:nth-child(1) {
+    display: inline;
+  }
+
+  &:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo > span {
+    &:nth-child(1) {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      display: inline;
+    }
+  }
+}
