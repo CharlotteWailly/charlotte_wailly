@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <!-- picocss -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css">
+    <!-- leaflet map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- HTML Meta Tags -->
+    <title>Charlotte Wailly | Avocat</title>
+    <meta name="description" content="Avocate et médiatrice à Lorient, spécialisée en droit de la famille, urbanisme et construction." />
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Charlotte Wailly | Avocat" />
+    <meta itemprop="description" content="Avocate et médiatrice à Lorient, spécialisée en droit de la famille, urbanisme et construction." />
+    <meta itemprop="image" content="https://charlottewailly.fr/images/charlotte_wailly_profile.jpg" />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://charlottewailly.fr" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Charlotte Wailly | Avocat" />
+    <meta property="og:description" content="Avocate et médiatrice à Lorient, spécialisée en droit de la famille, urbanisme et construction." />
+    <meta property="og:image" content="https://charlottewailly.fr/images/charlotte_wailly_profile.jpg" />
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Charlotte Wailly | Avocat" />
+    <meta name="twitter:description" content="Avocate et médiatrice à Lorient, spécialisée en droit de la famille, urbanisme et construction." />
+    <meta name="twitter:image" content="https://charlottewailly.fr/images/charlotte_wailly_profile.jpg" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header id="header" class="is-fixed-above-lg" role="banner">
+        <div class="container">
+            <nav role="navigation">
+                <ul>
+                    <li>
+                        <a href="#home" role="menuitem" class="logo">
+                            <span>C.</span><span>Charlotte</span>&nbsp;Wailly
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#expertise" role="menuitem">
+                            Conseils
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#mediation" role="menuitem">
+                            Médiation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" role="menuitem">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a id="theme-toggle" class="contrast" aria-label="Turn on dark mode" data-discover="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="currentColor" class="icon-theme-toggle">
+                                <clipPath id="theme-toggle-cutout">
+                                    <path d="M0-11h25a1 1 0 0017 13v30H0Z"></path>
+                                </clipPath>
+                                <g clip-path="url(#theme-toggle-cutout)">
+                                    <circle cx="16" cy="16" r="8.4"></circle>
+                                    <path d="M18.3 3.2c0 1.3-1 2.3-2.3 2.3s-2.3-1-2.3-2.3S14.7.9 16 .9s2.3 1 2.3 2.3zm-4.6 25.6c0-1.3 1-2.3 2.3-2.3s2.3 1 2.3 2.3-1 2.3-2.3 2.3-2.3-1-2.3-2.3zm15.1-10.5c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zM3.2 13.7c1.3 0 2.3 1 2.3 2.3s-1 2.3-2.3 2.3S.9 17.3.9 16s1-2.3 2.3-2.3zm5.8-7C9 7.9 7.9 9 6.7 9S4.4 8 4.4 6.7s1-2.3 2.3-2.3S9 5.4 9 6.7zm16.3 21c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zm2.4-21c0 1.3-1 2.3-2.3 2.3S23 7.9 23 6.7s1-2.3 2.3-2.3 2.4 1 2.4 2.3zM6.7 23C8 23 9 24 9 25.3s-1 2.3-2.3 2.3-2.3-1-2.3-2.3 1-2.3 2.3-2.3z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section id="home" class="grid-container">
+            <div class="grid-item article">
+                <div class="hero-container">
+                    <img class="picture" src="./images/charlotte_wailly_profile.jpg" alt="Charlotte Wailly">
+                    <ul>
+                        <li>
+                            <a href="./charlotte_wailly_cv.pdf" target="_blank" rel="noopener noreferrer nofollow">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=61568293764412" target="_blank" rel="noopener noreferrer nofollow">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/charlotte-wailly-639875308" target="_blank" rel="noopener noreferrer nofollow">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://consultation.avocat.fr/avocat-la-trinite-sur-mer/charlotte-wailly-42604.html" target="_blank" rel="noopener noreferrer nofollow">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zm64 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 400l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h1 class="title">Charlotte Wailly</h1>
+                <h2 class="caption">Médiatrice & Avocate</h2>
+                <p>Je conseille les personnes dans leur vie juridique, de couple et de famille.</p>
+                <p>Avocate depuis 2014, inscrite au barreau de Lorient, j'interviens dans les domaines du droit de l’urbanisme et de l'immobilier et du droit de la famille.</p>
+                <p>Médiatrice depuis 2017, je mets également en oeuvre les modes alternatifs de règlement des différends dits MARD (négociation, médiation, conciliation...).<p>
+                <p>Structurés par des entretiens individuels et des réunions plénières, ils permettent de dénouer des situations par l'écoute, l'identification des besoins et le dialogue.<p>
+                </div>
+            <div class="grid-item cover" style="background-image: url('./images/ficus_lg.jpg');"></div>
+        </section>
+        <section id="conseils" class="grid-container">
+            <div class="grid-item article">
+                <h3>Domaines d'intervention</h3>
+                <h4>Droit de l’urbanisme</h4>
+                <ul>
+                    <li>Autorisations d’urbanisme : permis de construire, décision de non-opposition à déclaration préalable, permis d’aménager, refus, certificat d’urbanisme opérationnel et informatif, lotissement</li>
+                    <li>Recours en annulation, référé-suspension devant les Tribunaux administratifs et les Cours administratives d’appel</li>
+                    <li>Audit de permis de construire avant dépôt, appui juridique à l’instruction des autorisations d’urbanisme</li>
+                    <li>Étude de l’opportunité d’attaquer un refus ou un retrait d’une autorisation d’urbanisme</li>
+                    <li>Détermination des délais d’instruction et des possibilités d’obtenir une autorisation d’urbanisme tacite</li>
+                    <li>Etude de la légalité du classement d’urbanisme d’une parcelle par un document de planification</li>
+                    <li>Expropriation, préemption : contentieux, évaluation du bien, analyse de la régularité d’une procédure, procédure de préemption et déclaration d’intention d’aliéner</li>
+                </ul>
+                <hr>
+                <h4>Droit immobilier</h4>
+                <ul>
+                    <li>Requête en référé-expertise en vue de déterminer l’origine des désordres et malfaçons affectant un bien</li>
+                    <li>Requête en référé expertise préventive</li>
+                    <li>Demande de servitude de Tour d’échelle</li>
+                    <li>Étude des actes de propriété et détermination des caractéristiques des servitudes civiles (vues, passage, puisage, etc.)</li>
+                    <li>Conflits de voisinage, troubles anormaux de voisinage : privation de vue, servitude de passage, empiétement, bruits de voisinage, nuisances olfactives, hauteur des haies</li>
+                    <li>Baux d’habitation : procédure d’expulsion, impayé</li>
+                </ul>
+                <hr>
+                <h4>Droit de la famille</h4>
+                <ul>
+                    <li>Divorce, séparation, PACS, mariage, régime matrimonial, prestations compensatoires</li>
+                    <li>Modalités d'exercice de l'autorité parentale, pension alimentaire</li>
+                    <li>Assistance dans la gestion des conflits de succession</li>
+                </ul>
+                <hr>
+                <h4>Médiation familiale, administrative et civile</h4>
+                <ul>
+                    <li>Pour les couples et les familles</li>
+                    <li>Au sein des entreprises, des administrations et des associations</li>
+                    <li>Entre voisins, commerçants, entrepreneurs, clients</li>
+                    <li>Avec soi-même, pour cheminer sur une situation</li>
+                </ul>
+            </div>
+            <div class="grid-item cover" style="background-image: url('./images/dracaena_lg.jpg');"></div>
+        </section>
+        <section id="mediation" class="grid-container">
+            <div class="grid-item article">
+                <h3>Médiation</h3>
+                <p>Une médiation est un processus mené par un médiateur -intermédiaire neutre, impartial et indépendant à votre situation- permettant de résoudre efficacement et dans les meilleurs délais un différend.<p>
+                <p>Une tentative de médiation (ou de conciliation) doit être engagée avant toute saisine d’un juge lorsque le litige a un enjeux inférieur à 5 000€ ainsi que pour les conflits de voisinage.</p>
+                <p>Ainsi, vous pouvez me contacter en ma qualité de médiatrice en précisant vos nom, prénom, adresse, e-mail et téléphone ainsi que les coordonnées de la personne avec laquelle vous êtes en litige.</p>
+                <p>Je vous recontacterai afin de vous présenter la médiation et vous préciser les frais de mon intervention.</p>
+                <p>Avec votre accord, une convention de médiation sera signée.</p>
+                <p>La tentative de médiation coûte 90€ TTC pour contacter l’autre partie qui disposera alors de la possibilité d’accepter ou de refuser la médiation.</p>
+                <p>En cas d’acceptation, chacun règle un honoraire identique de médiation.</p>
+                <p>Je vous accueille ensuite en entretien individuel, par téléphone ou à mon cabinet.</p>
+                <p>A l’issue de ces entretiens individuels, j'organise une réunion plénière, à mon cabinet ou en visioconférence.</p>
+                <p>En cas de refus ou d’échec de la médiation, je vous adresse un certificat officiel de tentative de résolution amiable de votre litige.</p>
+                <p>Ce document fait foi devant les tribunaux.</p>
+            </div>
+            <div class="grid-item cover" style="background-image: url('./images/cactus_l.jpg');"></div>
+        </section>
+        <section id="contact" class="grid-container">
+            <div class="grid-item article">
+                <h3>Me contacter</h3>
+                <p>Rendez-vous par téléphone et à mon cabinet à La Trinité-sur-Mer.</p>
+                <p>Déplacement à domicile ou tout autre lieu permettant la confidentialité des échanges.</p>
+                <p>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                    2 bis rue des Frères Kermorvant<br>
+                    56470 La Trinité-sur-Mer
+                </p>
+                <p>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                    <a href="tel:+33633505722" target="_blank" rel="noopener noreferrer nofollow">06 33 50 57 22</a></p>
+                <p>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                    <a href="mailto:charlotte.wailly@avocat.fr" target="_blank" rel="noopener noreferrer nofollow">charlotte.wailly@avocat.fr</a>
+                </p>
+                <div class="cta">
+                    <a role="button" href="https://consultation.avocat.fr/avocat-la-trinite-sur-mer/charlotte-wailly-42604.html" target="_blank" rel="noopener noreferrer nofollow">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zm64 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 400l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></svg>
+                        Prendre Rendez-vous
+                    </a>
+                </div>
+            </div>
+            <div class="grid-item cover" style="background-image: url('./images/monstera.jpg');"></div>
+        </section>
+        <section>
+            <div id="map"></div>
+        </section>
+    </main>
+    <footer role="contentinfo" class="container footer">
+        <ul>
+            <li>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160l0 8c0 13.3 10.7 24 24 24l400 0c13.3 0 24-10.7 24-24l0-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224l-64 0 0 196.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512l448 0c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1L448 224l-64 0 0 192-40 0 0-192-64 0 0 192-48 0 0-192-64 0 0 192-40 0 0-192zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                Inscrite au répertoire SIRENE
+            </li>
+            <li>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M48 0C21.5 0 0 21.5 0 48L0 464c0 26.5 21.5 48 48 48l96 0 0-80c0-26.5 21.5-48 48-48s48 21.5 48 48l0 80 96 0c26.5 0 48-21.5 48-48l0-416c0-26.5-21.5-48-48-48L48 0zM64 240c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm112-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM80 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM272 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16z"/></svg>
+                SIRET 808 061 865 00073
+            </li>
+            <li>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"/></svg>
+                <a href="./charlotte_wailly_cv.pdf" target="_blank" rel="noopener noreferrer nofollow">
+                    Télécharger mon CV
+                </a>
+            </li>
+            <li>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zm64 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 400l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></svg>
+                <a href="https://consultation.avocat.fr/avocat-la-trinite-sur-mer/charlotte-wailly-42604.html" target="_blank" rel="noopener noreferrer nofollow">
+                    https://consultation.avocat.fr
+                </a>
+            </li>
+            <li>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                <a href="https://www.facebook.com/profile.php?id=61568293764412" target="_blank" rel="noopener noreferrer nofollow">
+                    Charlotte Wailly
+                </a>
+            </li>
+            <li>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                <a href="https://www.linkedin.com/in/charlotte-wailly-639875308" target="_blank" rel="noopener noreferrer nofollow">
+                    charlotte-wailly-639875308
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <small>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+                    <a href="https://tangoman.io" target="_blank" rel="noopener noreferrer nofollow">Design : Matthias Morin</a>
+                </small>
+            </li>
+            <li>
+                <small>Développé avec <a href="https://picocss.com" target="_blank" rel="noopener noreferrer nofollow">picocss</a></small>
+            </li>
+            <li>
+                <small>Polices <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer nofollow">google fonts</a></small>
+            </li>
+            <li>
+                <small>Icônes <a href="https://fontawesome.com" target="_blank" rel="noopener noreferrer nofollow">font awesome</a></small>
+            </li>
+            <li>
+                <small>Carte <a href="https://leafletjs.com" target="_blank" rel="noopener noreferrer nofollow">leaflet</a></small>
+            </li>
+        </ul>
+    </footer>
+    <!-- custom javascript -->
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
