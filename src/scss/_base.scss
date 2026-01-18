@@ -1,0 +1,42 @@
+/* fonts */
+@font-face {
+  font-family: 'Jost';
+  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7myjJTVBNIg.woff2) format("woff2");
+}
+
+:root {
+  --pico-font-family-sans-serif:Jost,Arial,Helvetica,sans-serif;
+  --tango-spacing-md:2rem;
+  --tango-spacing-lg:4rem;
+}
+
+p {
+  text-align: justify;
+}
+
+h3 {
+  position: relative;
+  margin-bottom: var(--tango-spacing-md);
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    width: 6rem;
+    height: 5px;
+    background-color: var(--pico-primary);
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: -5px;
+  margin-right: .5rem;
+}
+
+/* scroll */
+html {
+  scroll-behavior: smooth;
+}
