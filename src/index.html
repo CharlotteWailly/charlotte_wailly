@@ -10,29 +10,121 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="icon" href="./favicon/favicon.ico" sizes="any">
     <link rel="manifest" href="./site.webmanifest">
+    <link rel="preload" href="./fonts/jost.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./images/charlotte_wailly_profile.webp" as="image" type="image/webp" fetchpriority="high">
     <!-- picocss -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css">
+    <link rel="stylesheet" href="./vendor/pico.cyan.min.css">
     <!-- leaflet map -->
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
     <!-- HTML Meta Tags -->
-    <title>Charlotte Wailly | Avocat</title>
-    <meta name="description" content="Avocate et médiatrice à Lorient, spécialisée en droit de la famille, urbanisme et construction." />
+    <title>Charlotte Wailly | Avocate &amp; Médiatrice à Lorient</title>
+    <link rel="canonical" href="https://charlottewailly.fr/">
+    <meta name="description" content="Charlotte Wailly, avocate et médiatrice à La Trinité-sur-Mer et Lorient : droit de la famille, droit civil immobilier, urbanisme et médiation." />
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Charlotte Wailly | Avocat" />
-    <meta itemprop="description" content="Avocate et médiatrice à Lorient, spécialisée en droit de la famille, urbanisme et construction." />
+    <meta itemprop="name" content="Charlotte Wailly | Avocate &amp; Médiatrice à Lorient" />
+    <meta itemprop="description" content="Charlotte Wailly, avocate et médiatrice à La Trinité-sur-Mer et Lorient : droit de la famille, droit civil immobilier, urbanisme et médiation." />
     <meta itemprop="image" content="https://charlottewailly.fr/images/charlotte_wailly_profile.jpg" />
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://charlottewailly.fr" />
+    <meta property="og:url" content="https://charlottewailly.fr/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Charlotte Wailly | Avocat" />
-    <meta property="og:description" content="Avocate et médiatrice à Lorient, spécialisée en droit de la famille, urbanisme et construction." />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Charlotte Wailly" />
+    <meta property="og:title" content="Charlotte Wailly | Avocate &amp; Médiatrice à Lorient" />
+    <meta property="og:description" content="Charlotte Wailly, avocate et médiatrice à La Trinité-sur-Mer et Lorient : droit de la famille, droit civil immobilier, urbanisme et médiation." />
     <meta property="og:image" content="https://charlottewailly.fr/images/charlotte_wailly_profile.jpg" />
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Charlotte Wailly | Avocat" />
-    <meta name="twitter:description" content="Avocate et médiatrice à Lorient, spécialisée en droit de la famille, urbanisme et construction." />
+    <meta name="twitter:title" content="Charlotte Wailly | Avocate &amp; Médiatrice à Lorient" />
+    <meta name="twitter:description" content="Charlotte Wailly, avocate et médiatrice à La Trinité-sur-Mer et Lorient : droit de la famille, droit civil immobilier, urbanisme et médiation." />
     <meta name="twitter:image" content="https://charlottewailly.fr/images/charlotte_wailly_profile.jpg" />
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LegalService",
+          "@id": "https://charlottewailly.fr/#legal-service",
+          "name": "Charlotte Wailly",
+          "url": "https://charlottewailly.fr/",
+          "image": "https://charlottewailly.fr/images/charlotte_wailly_profile.jpg",
+          "description": "Avocate et médiatrice à La Trinité-sur-Mer, spécialisée en droit de la famille, droit civil immobilier et droit de l'urbanisme.",
+          "telephone": "+33633505722",
+          "email": "charlotte.wailly@avocat.fr",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2 bis rue des Frères Kermorvant",
+            "postalCode": "56470",
+            "addressLocality": "La Trinité-sur-Mer",
+            "addressCountry": "FR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 47.58581966373667,
+            "longitude": -3.0269186603240565
+          },
+          "areaServed": [
+            "Lorient",
+            "La Trinité-sur-Mer",
+            "Morbihan"
+          ],
+          "founder": {
+            "@id": "https://charlottewailly.fr/#person"
+          },
+          "knowsAbout": [
+            "Droit de la famille",
+            "Droit civil immobilier",
+            "Droit de l'urbanisme",
+            "Médiation"
+          ],
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61568293764412",
+            "https://www.linkedin.com/in/charlotte-wailly-639875308",
+            "https://consultation.avocat.fr/avocat-la-trinite-sur-mer/charlotte-wailly-42604.html"
+          ],
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "contactType": "legal",
+              "email": "charlotte.wailly@avocat.fr",
+              "telephone": "+33633505722",
+              "availableLanguage": [
+                "fr"
+              ]
+            },
+            {
+              "@type": "ContactPoint",
+              "contactType": "mediation",
+              "email": "mediation@charlottewailly.fr",
+              "telephone": "+33633505722",
+              "availableLanguage": [
+                "fr"
+              ]
+            }
+          ],
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "SIRET",
+            "value": "80806186500073"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://charlottewailly.fr/#person",
+          "name": "Charlotte Wailly",
+          "jobTitle": "Avocate et médiatrice",
+          "worksFor": {
+            "@id": "https://charlottewailly.fr/#legal-service"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/charlotte-wailly-639875308"
+          ]
+        }
+      ]
+    }
+    </script>
     <!-- custom css -->
     <link rel="stylesheet" href="./scss/styles.scss">
 </head>
@@ -84,7 +176,10 @@
         <section id="home" class="grid-container">
             <div class="grid-item article">
                 <div class="hero-container">
-                    <img class="picture" src="./images/charlotte_wailly_profile.jpg" alt="Charlotte Wailly">
+                    <picture>
+                        <source srcset="./images/charlotte_wailly_profile.webp" type="image/webp">
+                        <img class="picture" src="./images/charlotte_wailly_profile_800.jpg" alt="Charlotte Wailly, avocate et médiatrice" width="800" height="800" fetchpriority="high" decoding="async">
+                    </picture>
                     <ul>
                         <li>
                             <a href="./charlotte_wailly_cv.pdf" target="_blank" rel="noopener noreferrer nofollow">
@@ -108,14 +203,14 @@
                         </li>
                     </ul>
                 </div>
-                <h1 class="title">Charlotte Wailly</h1>
-                <h2 class="caption">Médiatrice & Avocate</h2>
+                <h1 class="title">Charlotte Wailly<span class="visually-hidden">, avocate et médiatrice à La Trinité-sur-Mer</span></h1>
+                <h2 class="caption">Avocate Médiatrice</h2>
                 <p>Je conseille les personnes dans leur vie juridique, de couple et de famille.</p>
                 <p>Avocate depuis 2014, inscrite au barreau de Lorient, j'interviens dans les domaines du droit de l’urbanisme et de l'immobilier et du droit de la famille.</p>
-                <p>Médiatrice depuis 2017, je mets également en oeuvre les modes alternatifs de règlement des différends dits MARD (négociation, médiation, conciliation...).<p>
-                <p>Structurés par des entretiens individuels et des réunions plénières, ils permettent de dénouer des situations par l'écoute, l'identification des besoins et le dialogue.<p>
+                <p>Médiatrice depuis 2017, je mets également en oeuvre les modes alternatifs de règlement des différends dits MARD (négociation, médiation, conciliation...).</p>
+                <p>Structurés par des entretiens individuels et des réunions plénières, ils permettent de dénouer des situations par l'écoute, l'identification des besoins et le dialogue.</p>
                 </div>
-            <div class="grid-item cover" style="background-image: url('./images/ficus_lg.jpg');"></div>
+            <div class="grid-item cover cover--ficus"></div>
         </section>
         <section id="conseils" class="grid-container">
             <div class="grid-item article">
@@ -156,12 +251,12 @@
                     <li>Avec soi-même, pour cheminer sur une situation</li>
                 </ul>
             </div>
-            <div class="grid-item cover" style="background-image: url('./images/dracaena_lg.jpg');"></div>
+            <div class="grid-item cover cover--dracaena"></div>
         </section>
         <section id="mediation" class="grid-container">
             <div class="grid-item article">
                 <h3>Médiation</h3>
-                <p>Une médiation est un processus mené par un médiateur -intermédiaire neutre, impartial et indépendant à votre situation- permettant de résoudre efficacement et dans les meilleurs délais un différend.<p>
+                <p>Une médiation est un processus mené par un médiateur -intermédiaire neutre, impartial et indépendant à votre situation- permettant de résoudre efficacement et dans les meilleurs délais un différend.</p>
                 <p>Une tentative de médiation (ou de conciliation) doit être engagée avant toute saisine d’un juge lorsque le litige a un enjeux inférieur à 5 000€ ainsi que pour les conflits de voisinage.</p>
                 <p>Ainsi, vous pouvez me contacter en ma qualité de médiatrice en précisant vos nom, prénom, adresse, e-mail et téléphone ainsi que les coordonnées de la personne avec laquelle vous êtes en litige.</p>
                 <p>Je vous recontacterai afin de vous présenter la médiation et vous préciser les frais de mon intervention.</p>
@@ -173,7 +268,7 @@
                 <p>En cas de refus ou d’échec de la médiation, je vous adresse un certificat officiel de tentative de résolution amiable de votre litige.</p>
                 <p>Ce document fait foi devant les tribunaux.</p>
             </div>
-            <div class="grid-item cover" style="background-image: url('./images/cactus_l.jpg');"></div>
+            <div class="grid-item cover cover--cactus"></div>
         </section>
         <section id="contact" class="grid-container">
             <div class="grid-item article">
@@ -199,7 +294,7 @@
                     </a>
                 </div>
             </div>
-            <div class="grid-item cover" style="background-image: url('./images/monstera.jpg');"></div>
+            <div class="grid-item cover cover--monstera"></div>
         </section>
         <section>
             <div id="map"></div>
@@ -262,6 +357,6 @@
         </ul>
     </footer>
     <!-- custom javascript -->
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/main.js" defer></script>
 </body>
 </html>

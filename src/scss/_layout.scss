@@ -36,6 +36,22 @@ section:first-child > .article {
   min-height: 25vh;
 }
 
+.cover--ficus {
+  background-image: url('../images/ficus_lg.webp');
+}
+
+.cover--dracaena {
+  background-image: url('../images/dracaena_lg.webp');
+}
+
+.cover--cactus {
+  background-image: url('../images/cactus_l.webp');
+}
+
+.cover--monstera {
+  background-image: url('../images/monstera.webp');
+}
+
 .cta {
   padding-top: var(--tango-spacing-md);
   padding-bottom: var(--tango-spacing-md);
@@ -79,7 +95,7 @@ footer.footer {
   }
 
   .cover {
-    /* remove fixed scroll effect on background */
+    /* remove fixed scroll effect on large screens */
     background-attachment: unset;
   }
 

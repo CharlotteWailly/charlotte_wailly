@@ -1,7 +1,22 @@
 /* fonts */
 @font-face {
   font-family: 'Jost';
-  src: url(https://fonts.gstatic.com/s/jost/v18/92zPtBhPNqw79Ij1E865zBUv7myjJTVBNIg.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/jost.woff2') format("woff2");
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 :root {
